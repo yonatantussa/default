@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: right;
     color: #3e59fe;
 }
@@ -335,7 +335,7 @@ nav .fas{
         background-image: url(images/mobile-background.png);
     }
     .header-text{
-        margin-top: 170%;
+        margin-top: 160%;
         font-size: 32px;
         font-weight: 600;
     }

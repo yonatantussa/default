@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content ="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yonatan Tussa</title>
+    <title>tussa.info</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d9e54436d8.js" crossorigin="anonymous"></script>
 </head>
@@ -26,7 +26,8 @@
         <!-- -----Contact Button----- -->
         <a href="#contact" class="btn">Contact Me</a>
         <div class="header-text">
-            <p>Software Engineer</p>
+            
+            <h3 class="my-profession"><span class="typing">Software Engineer</span></h3>
             <h1>Yonatan Tussa</h1>
         </div>
     </div>
@@ -41,7 +42,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Hello, I'm Yonatan, a passionate Software Engineer dedicated to continuous learning and innovation in the expansive realm of computer science. My journey began in the 7th grade when I built my first computer, sparking a curiosity that evolved into a deep exploration of technology.</p>
+                <p>Hello, I'm Yonatan, a passionate Software Engineer dedicated to continuous learning and innovation in the expansive realm of computer science. My journey began in the 7th grade when I built my first computer, sparking a curiosity that evolved into a never-ending exploration of technology.</p>
                 <br>
 
                 <p>Initially drawn to becoming a Hardware Engineer, I broadened my skills in high school by founding and managing a company focused on selling shoes. This entrepreneurial venture provided valuable insights into leadership, marketing, and business expansion. As the company diversified into various markets, I seized the opportunity to merge my technical expertise with customer demand, transforming parts lists into fully functional custom-built computers.</p>
@@ -53,7 +54,7 @@
                 <p>Looking ahead, I plan to transfer to the University of Maryland in 2024 to complete my Bachelor's degree, with the ultimate goal of leveraging my acquired knowledge and skills to build something of my own, and make a positive impact within the tech industry.</p>
                 <br>
 
-                <p>Explore my portfolio and resume to get a closer look at my skills and experiences. Whether you have inquiries or just want to connect, feel free to reach out!</p>
+                <p>Explore my portfolio and resume to get a closer look at my skills and experiences. Whether you have inquiries or just want to connect, feel free to reach out.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -102,7 +103,7 @@
                 <img src="images/portfolio2.png">
                 <div class="layer">
                     <h3>Educator!</h3>
-                    <p>As a STEM Lead Instructor, I guided hundreds of children through engaging LEGO projects, fostering creativity and problem-solving skills. It was a rewarding experience witnessing the students' excitement as they explored the wonders of engineering.</p>
+                    <p>As a STEM Lead Instructor, I guided hundreds of children through engaging LEGO projects, fostering creativity and problem-solving skills. It was a rewarding experience witnessing the students' excitement as they explored the wonders of engineering!</p>
                 </div>
             </div>
             <div class="work">
@@ -159,6 +160,9 @@
                           label: 'Schedule an appointment',
                           target,
                         });
+
+                        var buttonElement = document.querySelector('.calendar-button button');
+        buttonElement.style.fontFamily = 'Poppins, sans-serif';
                       });
                     })();
                     </script>
@@ -181,8 +185,8 @@
                 <p><a href="tel:+12025561564"><i class="fa-solid fa-phone"></i></a> (202) 556-1564</p>
                 <div class="social-icons">
                     <a href="mailto:ytussa@montgomerycollege.edu"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://github.com/YonatanTussa"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/yonatantussa/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/YonatanTussa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yonatantussa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="contact-right">
@@ -246,6 +250,21 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+<!-- --------JS Files-------- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var typed = new Typed('.typing', {
+        strings: ['Web Developer', 'Graphic Designer', 'Entrepreneur'],
+        typeSpeed: 100,
+        backSpeed: 60,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true
+      });
+    });
   </script>
 </body>
 </html>
