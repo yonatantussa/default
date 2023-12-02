@@ -381,6 +381,11 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
+    /* --------My Work Boxes-------- */
+    .layer h3{
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
     .layer a{
         margin-top: 10px;
         color: #3e59fe;
