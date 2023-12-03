@@ -225,14 +225,14 @@ nav ul li a:hover::after{
 
 /* -------Resume-------- */
 #resume {
-    padding: 0px 0; /* Adjust padding if needed */
+    padding: 0px 0;
     margin-top: -50px;
 }
 
 .resume-col-1 {
     width: 100%;
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center text within the column */
+    margin: 0 auto;
+    text-align: center; 
 }
 
 /* --------Calendar-------- */
@@ -253,6 +253,18 @@ nav ul li a:hover::after{
     border-width: 0;
     filter: invert(.9) saturate(0.5) hue-rotate(145deg);
   }
+  #calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calendar-col-1 {
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
 /* -------Contact------- */
 .contact-left{
     flex-basis: 35%;
@@ -439,6 +451,7 @@ nav .fas{
     }
     .resume-col-1{
         width: 100%;
+        text-align: left;
     }
     /* --------Calendar-------- */
 .responsive-calendar-wrapper {
@@ -457,6 +470,9 @@ nav .fas{
     height: 100%;
     border-width: 0;
     filter: invert(.9) saturate(0.5) hue-rotate(145deg);
+  }
+  .calendar-col-1{
+    text-align: left;
   }
 }
 #msg{
