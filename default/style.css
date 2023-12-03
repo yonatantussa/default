@@ -37,7 +37,7 @@ body{
     background: #3e59fe
 }
 .container{
-    padding: 10px 10%;;
+    padding: 10px 10%;
 }
 
 nav{
@@ -236,7 +236,23 @@ nav ul li a:hover::after{
 }
 
 /* --------Calendar-------- */
+.responsive-calendar-wrapper {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    padding-top: calc(100% / 2);
+  }
 
+  .responsive-calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    filter: invert(.9) saturate(0.5) hue-rotate(145deg);
+  }
 /* -------Contact------- */
 .contact-left{
     flex-basis: 35%;
@@ -332,16 +348,16 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/mobile-background.png);
+        background-image: url(images/mobile-background.jpg);
     }
     .header-text{
         margin-top: 180%;
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 600;
     }
     .header-text h1{
         margin-top: -5px;
-        font-size: 45px;
+        font-size: 43px;
         font-weight: bold;
     }
     nav .fas{
@@ -383,6 +399,7 @@ nav .fas{
     }
     /* --------My Work Boxes-------- */
     .layer h3{
+        font-size: 17px;
         font-weight: 800;
         margin-bottom: 10px;
     }
@@ -390,7 +407,7 @@ nav .fas{
         margin-top: 10px;
         color: #3e59fe;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 40px;
         background: #fff;
         width: 40px;
@@ -420,6 +437,24 @@ nav .fas{
     .resume-col-1{
         width: 100%;
     }
+    /* --------Calendar-------- */
+.responsive-calendar-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    padding-top: calc(100% / 2);
+  }
+
+  .responsive-calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    filter: invert(.9) saturate(0.5) hue-rotate(145deg);
+  }
 }
 #msg{
     color: gray;
