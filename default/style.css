@@ -407,7 +407,7 @@ nav .fas{
         margin-top: 10px;
         color: #3e59fe;
         text-decoration: none;
-        font-size: 10px;
+        font-size: 15px;
         line-height: 40px;
         background: #fff;
         width: 40px;
@@ -416,7 +416,7 @@ nav .fas{
         text-align: center;
     }
     .layer p{
-        font-size: 14px;
+        font-size: 13px;
     }
     .tab-links{
         font-size: 16px;
