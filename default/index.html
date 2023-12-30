@@ -158,24 +158,32 @@
                     <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
                     <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
                     <script>
-                    (function() {
-                      var target = document.currentScript;
-                      window.addEventListener('load', function() {
-                        calendar.schedulingButton.load({
-                          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2zPo2WD7yzzngBcENJ9CAGbKR5zclz0RMf4t2KR3-fwLLA7uol_uNTTuwmUUjA8Re4PxDvw3kM?gv=true',
-                          color: '#3e59fe',
-                          label: 'Schedule an appointment',
-                          target,
+                      (function () {
+                        var target = document.currentScript;
+                        window.addEventListener('load', function () {
+                          calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2zPo2WD7yzzngBcENJ9CAGbKR5zclz0RMf4t2KR3-fwLLA7uol_uNTTuwmUUjA8Re4PxDvw3kM?gv=true',
+                            color: '#3e59fe',
+                            label: 'Schedule an appointment',
+                            target,
+                          });
+                  
+                          var buttonElement = document.querySelector('.calendar-button button');
+                          buttonElement.style.fontFamily = 'Poppins, sans-serif';
+                          buttonElement.style.fontSize = '17px';
+                          buttonElement.style.width = 'fit-content';
+                          buttonElement.style.height = '50px';
+                          buttonElement.classList.add('btn', 'btn2');
+                  
+                          // Add an event listener to open the scheduling page in a new tab
+                          buttonElement.addEventListener('click', function () {
+                            // Check if the device is a mobile device (adjust as needed)
+                            if (window.innerWidth <= 767) {
+                              window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ2zPo2WD7yzzngBcENJ9CAGbKR5zclz0RMf4t2KR3-fwLLA7uol_uNTTuwmUUjA8Re4PxDvw3kM?gv=true', '_blank');
+                            }
+                          });
                         });
-
-                        var buttonElement = document.querySelector('.calendar-button button');buttonElement.style.fontFamily = 'Poppins, sans-serif';
-                        buttonElement.style.fontSize = '17px'
-                        buttonElement.style.width = 'fit-content';
-                        buttonElement.style.height = '50px';
-                        buttonElement.classList.add('btn', 'btn2');
-
-                      });
-                    })();
+                      })();
                     </script>
                   </div>
 <!-- end Google Calendar Appointment Scheduling -->
