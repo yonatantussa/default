@@ -412,6 +412,9 @@ nav .fas{
         font-size: 14px;
     }
     /* --------My Work Boxes-------- */
+    .work-list{
+        margin-top: 1%;
+    }
     .layer h3{
         font-size: 15px;
         font-weight: 800;
