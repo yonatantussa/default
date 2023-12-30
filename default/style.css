@@ -363,7 +363,8 @@ nav .fas{
         background-image: url(images/mobile-background.jpg);
     }
     .header-text{
-        margin-top: 180%;
+        position: absolute;
+        bottom: 0;
         font-size: 23px;
         font-weight: 600;
     }
