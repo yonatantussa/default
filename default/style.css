@@ -365,6 +365,7 @@ nav .fas{
     .header-text{
         position: absolute;
         bottom: 0;
+        right: 5%;
         font-size: 23px;
         font-weight: 600;
     }
