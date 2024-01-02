@@ -34,7 +34,8 @@ body{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #3e59fe
+    background: #3e59fe;
+    box-shadow: 0 0 30px #3e59fe;
 }
 .container{
     padding: 10px 10%;
