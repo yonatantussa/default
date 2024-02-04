@@ -407,7 +407,7 @@ nav .fas{
         font-size: 40px;
     }
     .about-col-1{
-        display: flex
+        display: none;
     }
     .about-col-2{
         flex-basis: 100%;
