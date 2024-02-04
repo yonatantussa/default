@@ -363,6 +363,9 @@ nav .fas{
     #header{
         background-image: url(images/mobile-background.jpg);
     }
+    .btn{
+        background: #3e59fe;
+    }
     .header-text{
         position: absolute;
         bottom: 0;
@@ -403,7 +406,10 @@ nav .fas{
     .sub-title{
         font-size: 40px;
     }
-    .about-col-1, .about-col-2{
+    .about-col-1{
+        display: none
+    }
+    .about-col-2{
         flex-basis: 100%;
     }
     .about-col-1{
