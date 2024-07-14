@@ -37,7 +37,7 @@
 </div>
 
 <!-- ----ABOUT SECTION---- -->
-<div id="about">
+<div id="about" class="hidden">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -48,7 +48,7 @@
                 <p>Hello, I'm Yonatan, a passionate Software Engineer and aspiring Product Manager who enjoys working with others to build cool stuff. Committed to continuous learning and innovation, my ultimate goal is to leverage my knowledge and skills to create solutions that transform lives and make a lasting impact on communities around the world.</p>
                 <br>
 
-                <p>Explore my portfolio and resume to learn more about my skills and experiences. Whether you have inquiries or just want to connect, feel free to reach out.</p>
+                <!-- <p>Explore my portfolio and resume to learn more about my skills and experiences. Whether you have inquiries or just want to connect, feel free to reach out.</p> -->
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -83,7 +83,7 @@
     </div>
 </div>
 <!-- -------Portfolio-------- -->
-<div id="portfolio">
+<div id="portfolio" class="hidden">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
@@ -91,7 +91,7 @@
                 <img src="images/vistraPortfolio.png">
                 <div class="layer">
                     <h3>Vistra</h3>
-                    <p>Vistra is a smart-mirror accessibility aid designed to empower individuals with physical disabilities. Check out it out here!
+                    <p>Vistra is a smart-mirror accessibility aid designed to empower individuals with physical disabilities. Made during Bitcamp 2024, our team won Bloomberg's Most Philanthropic Hack!
                     </p>
                     <a href="https://devpost.com/software/vistra-the-mirror-for-everyone" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -148,7 +148,7 @@
 </div>
 
 <!-- -------Resume-------- -->
-<div id="resume">
+<div id="resume" class="hidden">
     <div class="container">
         <div class="row">
             <div class="resume-col-1">
@@ -163,7 +163,7 @@
 </div>
 
 <!-- -------Calendar-------- -->
-<div id="calendar">
+<div id="calendar" class="hidden">
     <div class="container">
         <div class="row">
             <div class="calendar-col-1">
@@ -222,7 +222,7 @@
 </div>
 
 <!-- -------Contact------- -->
-<div id="contact">
+<div id="contact" class="hidden">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -311,6 +311,23 @@
         loop: true
       });
     });
-  </script>
+</script>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    })
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
 </body>
 </html>

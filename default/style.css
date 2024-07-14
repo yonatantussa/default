@@ -20,6 +20,21 @@ body{
     background-position: center;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 /* ------Contact Me Button------- */
 .btn{
     display: block;
